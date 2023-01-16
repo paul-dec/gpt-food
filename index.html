@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mon Assistant Minceur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="header" id="header">
+    <div class="header-bloc">
+      <h1 class="header-title">Mon Assistant Minceur</h1>
+      <p class="header-text"> Fini les programmes minceurs à Prix d'Or !</p>
+      <a class="header-button" href="#embed">Recevez votre Programme Minceur Mensuel</a>
+    </div>
+    <img class="header-image" src="src/background1.jpg">
+  </div>
+  <div class="details" id="details">
+    <h2 class="details-big-title">Avez-vous du mal à planifier et à organiser votre régime alimentaire ?</h2>
+    <div class="details-row">
+      <div class="details-bloc">
+        <img src="src/icon1.webp" class="details-image">
+        <h3 class="details-title">Gagner un temps précieux</h3>
+        <p class="details-text"> La planification d'un régime alimentaire peut être une tâche chronophage et fastidieuse. Il peut être difficile de savoir par où commencer, et de trouver des informations fiables et dignes de confiance.</p>
+      </div>
+      <div class="details-bloc">
+        <img src="src/icon2.webp" class="details-image">
+        <h3 class="details-title">Laissez-nous préparer vos repas</h3>
+        <p class="details-text">Mon assistant Minceur est un outil qui utilise l'intelligence artificielle pour aider les utilisateurs à planifier et organiser leurs régimes.</p>
+      </div>
+      <div class="details-bloc">
+        <img src="src/icon3.webp" class="details-image">
+        <h3 class="details-title">Optimiser votre perte de poids</h3>
+        <p class="details-text">Offre une option pratique pour les utilisateurs qui souhaitent une solution toute faite.</p>
+      </div>
+    </div>
+  </div>
+  <div class="reviews">
+    <div class="reviews-bloc">
+      <h4 class="reviews-title">Rejoignez des centaines d'histoires a succès</h4>
+      <div class="reviews-review">
+        <img class="reviews-image" src="src/review1.webp">
+        <p class="reviews-name">Nicole</p>
+        <p class="reviews-big-text">Incroyable !</p>
+        <p class="reviews-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+        <p class="reviews-text">J'utilise MonAssistantMinceur depuis quelques semaines maintenant et je suis vraiment impressionné par la qualité des repas proposés. Les options sont variées et adaptées à mes besoins alimentaires, et j'apprécie particulièrement la possibilité de personnaliser les repas selon mes préférences. L'interface est également très intuitive et facile à utiliser. Je recommande vivement cet outil à tous ceux qui cherchent à améliorer leur alimentation.</p>
+      </div>
+      <div class="reviews-review">
+        <img class="reviews-image" src="src/review2.webp">
+        <p class="reviews-name">Nolan</p>
+        <p class="reviews-big-text">Je recommande à 100%</p>
+        <p class="reviews-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+        <p class="reviews-text">J'ai été agréablement surprise par MonAssistantMinceur. Les recettes proposées étaient savoureuses et faciles à réaliser, et j'ai réussi à perdre du poids en suivant le plan alimentaire généré par l'outil. Je le recommande vivement à tous ceux qui cherchent à perdre du poids de manière saine et efficace.</p>
+      </div>
+      <div class="reviews-review">
+        <img class="reviews-image" src="src/review2.webp">
+        <p class="reviews-name">Isabelle</p>
+        <p class="reviews-big-text">Super simple</p>
+        <p class="reviews-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+        <p class="reviews-text">MonAssistantMinceur est un outil incroyablement utile pour ceux qui cherchent à perdre du poids. Les recettes proposées sont délicieuses et variées, et j'ai apprécié la flexibilité de pouvoir personnaliser mon plan alimentaire en fonction de mes goûts et de mes besoins. Je recommande fortement cet outil à tous ceux qui cherchent à améliorer leur santé et à atteindre leurs objectifs de perte de poids.</p>
+      </div>
+      <div class="full-slider">
+        <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-arrow-left" style="width: 20px; height: 20px;"></i></a>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-arrow-right" style="width: 20px; height: 20px;"></i></a>
+      </div>
+    </div>
+    <img class="reviews-background" src="src/background.webp">
+  </div>
+  <div data-tf-widget="AFR4fpy9" data-tf-opacity="100" data-tf-iframe-props="title=My typeform" data-tf-transitive-search-params class="type-embed" id="embed"></div>
+  <script src="https://embed.typeform.com/next/embed.js"></script>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("reviews-review");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+  </script>
+</body>
+</html>
